@@ -1,6 +1,6 @@
 # Storybook Example
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using the command:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) with the `quickstart-redux` template using the command:
 
 ```sh
 npx create-react-app storybook-example --use-npm --template quickstart-redux
@@ -32,6 +32,12 @@ Launches the test runner in the interactive watch mode.
 
 - See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run storybook`
+
+Launches the storybook runner.
+
+- See [storybook.js.org](https://storybook.js.org) for more information.
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.
@@ -54,3 +60,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - [Advanced Configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 - [Deployment](https://facebook.github.io/create-react-app/docs/deployment)
 - [`npm build` fails to minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Contributing
+
+Please see the [contributing notes](CONTRIBUTING.md).
