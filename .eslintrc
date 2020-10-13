@@ -70,6 +70,19 @@
       "rules": {
         "react/prop-types": "off"
       }
+    },
+    {
+      "files": ["./src/stories/**/*.js"],
+      "rules": {
+        "react/prop-types": "off",
+        "react/no-unescaped-entities": "off"
+      }
+    },
+    {
+      "files": ["./src/stories/**/*.stories.js"],
+      "rules": {
+        "fp/no-mutation": "off"
+      }
     }
   ]
 }
