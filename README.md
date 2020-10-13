@@ -6,6 +6,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 npx create-react-app storybook-example --use-npm --template quickstart-redux
 ```
 
+Adjustments were made to the preset linting rules, then storybook was added.
+
+```sh
+npx sb init
+```
+
+And, similarly, adjustments were made for local linting preferences.
+
 ## Available Scripts
 
 In the project directory, you can run:

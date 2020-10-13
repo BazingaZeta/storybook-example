@@ -75,12 +75,7 @@
       "files": ["./src/stories/**/*.js"],
       "rules": {
         "react/prop-types": "off",
-        "react/no-unescaped-entities": "off"
-      }
-    },
-    {
-      "files": ["./src/stories/**/*.stories.js"],
-      "rules": {
+        "react/no-unescaped-entities": "off",
         "fp/no-mutation": "off"
       }
     }
