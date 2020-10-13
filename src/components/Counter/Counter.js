@@ -1,6 +1,6 @@
-import React from 'react';
-import {useCountValue, useActions} from '../../features/counter';
-import classes from './Counter.module.css';
+import React from 'react'
+import { useCountValue, useActions } from '../../features/counter'
+import classes from './Counter.module.css'
 
 const Counter = () => {
   /**
@@ -8,10 +8,10 @@ const Counter = () => {
    *  (state => state.counter.value) inside counter feature folder,
    *  to make component global state agnostic
    */
-  const count = useCountValue();
+  const count = useCountValue()
 
   /** Create incrementCounter action, using custom hook from feature */
-  const {incrementCounter} = useActions();
+  const { incrementCounter } = useActions()
 
   return (
     <div className={classes.counter}>
@@ -26,7 +26,7 @@ const Counter = () => {
         Total value: <strong>{count}</strong>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Counter;
+export default Counter

@@ -1,20 +1,20 @@
-import {GET_RANDOM_NUMBER} from './actionTypes';
-import RandomReducer from './RandomReducer';
+import { GET_RANDOM_NUMBER } from './actionTypes'
+import RandomReducer from './RandomReducer'
 
 describe('features > random > RandomReducer', () => {
   it('returns initial state, if non matched action is dispatched', () => {
     const initialState = {
       isLoading: false,
       hasError: false,
-      isFulfilled: false,
-    };
+      isFulfilled: false
+    }
 
     const action = {
-      type: 'FOO',
-    };
+      type: 'FOO'
+    }
 
-    expect(RandomReducer(initialState, action)).toBe(initialState);
-  });
+    expect(RandomReducer(initialState, action)).toBe(initialState)
+  })
 
   /**
    * Provide table of values to run test case against
@@ -23,24 +23,24 @@ describe('features > random > RandomReducer', () => {
   it.each([
     [`${GET_RANDOM_NUMBER}_FULFILLED`],
     [`${GET_RANDOM_NUMBER}_PENDING`],
-    [`${GET_RANDOM_NUMBER}_REJECTED`],
+    [`${GET_RANDOM_NUMBER}_REJECTED`]
   ])(`updates state according to dispatched action`, actionType => {
     const initialState = {
-      value: 0,
-    };
+      value: 0
+    }
 
     const payload =
       actionType === `${GET_RANDOM_NUMBER}_FULFILLED`
         ? {
-            data: 1,
+            data: 1
           }
-        : undefined;
+        : undefined
 
     const action = {
       type: actionType,
-      payload,
-    };
+      payload
+    }
 
-    expect(RandomReducer(initialState, action)).toMatchSnapshot();
-  });
-});
+    expect(RandomReducer(initialState, action)).toMatchSnapshot()
+  })
+})
