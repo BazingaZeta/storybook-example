@@ -1,96 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components > Random renders different store states when isLoading === false && hasError === false && isFulfilled === false 1`] = `
+exports[`components > Random > Pure renders different store states when isLoading=false && hasError=false && isFulfilled=false 1`] = `
 <DocumentFragment>
   <div
-    class="counter"
+    class="sc-gtssRu evpqoY"
   >
-    <h2
-      class="header"
+    <h1
+      class="sc-dlnjPT bgFMnT"
     >
-      Async Random
-    </h2>
+      some header
+    </h1>
     <button
-      class="button"
+      class="sc-bdnylx lolljv"
       type="button"
     >
-      Get random number
+      some label
     </button>
     <div>
-      Click the button to get random number
+      some actionLabel
     </div>
   </div>
 </DocumentFragment>
 `;
 
-exports[`components > Random renders different store states when isLoading === false && hasError === false && isFulfilled === true 1`] = `
+exports[`components > Random > Pure renders different store states when isLoading=false && hasError=false && isFulfilled=true 1`] = `
 <DocumentFragment>
   <div
-    class="counter"
+    class="sc-gtssRu evpqoY"
   >
-    <h2
-      class="header"
+    <h1
+      class="sc-dlnjPT bgFMnT"
     >
-      Async Random
-    </h2>
+      some header
+    </h1>
     <button
-      class="button"
+      class="sc-bdnylx lolljv"
       type="button"
     >
-      Get random number
+      some label
     </button>
     <div>
-      Number from random.org: 
-      <strong>
-        1
-      </strong>
+      Retrieved: 
+      <tt>
+        555
+      </tt>
     </div>
   </div>
 </DocumentFragment>
 `;
 
-exports[`components > Random renders different store states when isLoading === false && hasError === true && isFulfilled === false 1`] = `
+exports[`components > Random > Pure renders different store states when isLoading=false && hasError=true && isFulfilled=false 1`] = `
 <DocumentFragment>
   <div
-    class="counter"
+    class="sc-gtssRu evpqoY"
   >
-    <h2
-      class="header"
+    <h1
+      class="sc-dlnjPT bgFMnT"
     >
-      Async Random
-    </h2>
+      some header
+    </h1>
     <button
-      class="button"
+      class="sc-bdnylx lolljv"
       type="button"
     >
-      Get random number
+      some label
     </button>
     <div>
-      Ups...
+      Error: Could not retrieve a random number
     </div>
   </div>
 </DocumentFragment>
 `;
 
-exports[`components > Random renders different store states when isLoading === true && hasError === false && isFulfilled === false 1`] = `
+exports[`components > Random > Pure renders different store states when isLoading=true && hasError=false && isFulfilled=false 1`] = `
 <DocumentFragment>
   <div
-    class="counter"
+    class="sc-gtssRu evpqoY"
   >
-    <h2
-      class="header"
+    <h1
+      class="sc-dlnjPT bgFMnT"
     >
-      Async Random
-    </h2>
+      some header
+    </h1>
     <button
-      class="button"
+      class="sc-bdnylx lolljv"
       disabled=""
       type="button"
     >
-      Get random number
+      some label
     </button>
     <div>
-      Getting number
+      some loadingLabel
     </div>
   </div>
 </DocumentFragment>

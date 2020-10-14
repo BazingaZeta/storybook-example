@@ -1,13 +1,20 @@
-import React from 'react';
-import Counter from '../Counter';
-import Random from '../Random';
-import classes from './App.module.css';
+import React from 'react'
+
+import Counter from '../Counter'
+import Random from '../Random'
+
+import Header from '../Header'
+
+import { Container } from './styles'
 
 const App = () => (
-  <div className={classes.container}>
-    <Counter />
-    <Random />
-  </div>
-);
+  <>
+    <Header title="Let's click some buttons" subtitle="Who doesn't love buttons?" />
+    <Container>
+      <Counter />
+      <Random />
+    </Container>
+  </>
+)
 
-export default App;
+export default App

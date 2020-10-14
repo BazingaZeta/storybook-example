@@ -1,11 +1,11 @@
-import {GET_RANDOM_NUMBER} from './actionTypes';
+import { GET_RANDOM_NUMBER } from './actionTypes'
 
 const initialState = {
   number: undefined,
   isLoading: false,
   hasError: false,
-  isFulfilled: false,
-};
+  isFulfilled: false
+}
 
 export default (state = initialState, action) => {
   switch (action.type) {
@@ -15,26 +15,26 @@ export default (state = initialState, action) => {
         isFulfilled: false,
         isLoading: true,
         hasError: false,
-        number: undefined,
-      };
+        number: undefined
+      }
 
     case `${GET_RANDOM_NUMBER}_FULFILLED`:
       return {
         isFulfilled: true,
         isLoading: false,
         hasError: false,
-        number: action.payload.data,
-      };
+        number: action.payload.data
+      }
 
     case `${GET_RANDOM_NUMBER}_REJECTED`:
       return {
         isFulfilled: false,
         isLoading: false,
         hasError: true,
-        number: undefined,
-      };
+        number: undefined
+      }
 
     default:
-      return state;
+      return state
   }
-};
+}

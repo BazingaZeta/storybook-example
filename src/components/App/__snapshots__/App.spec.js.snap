@@ -2,40 +2,54 @@
 
 exports[`components > App renders without crashing 1`] = `
 <DocumentFragment>
+  <header
+    class="sc-eCApGN kDcbDM"
+  >
+    <h1
+      class="sc-dlnjPT sc-jSFkmK bgFMnT inRwcu"
+    >
+      Let's click some buttons
+    </h1>
+    <h2
+      class="sc-hKFyIo sc-gKAblj cVZoZe fSPzzJ"
+    >
+      Who doesn't love buttons?
+    </h2>
+  </header>
   <div
-    class="container"
+    class="sc-iCoHVE bGrukv"
   >
     <div
-      class="counter"
+      class="sc-gtssRu evpqoY"
     >
-      <h2
-        class="header"
+      <h1
+        class="sc-dlnjPT bgFMnT"
       >
-        Sync counter
-      </h2>
+        Counter
+      </h1>
       <button
-        class="button"
+        class="sc-bdnylx lolljv"
         type="button"
       >
         Increment by one
       </button>
       <div>
-        Total value: 
-        <strong>
+        Count: 
+        <tt>
           6
-        </strong>
+        </tt>
       </div>
     </div>
     <div
-      class="counter"
+      class="sc-gtssRu evpqoY"
     >
-      <h2
-        class="header"
+      <h1
+        class="sc-dlnjPT bgFMnT"
       >
-        Async Random
-      </h2>
+        Random Number
+      </h1>
       <button
-        class="button"
+        class="sc-bdnylx lolljv"
         type="button"
       >
         Get random number
