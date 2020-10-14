@@ -19,7 +19,7 @@ Short_no_Subtitle.args = {
 }
 
 export const Short_with_Subtitle = Template.bind({})
-Short_no_Subtitle.args = {
+Short_with_Subtitle.args = {
   title: 'A short title',
   subtitle: 'And a fabulous subtitle'
 }
