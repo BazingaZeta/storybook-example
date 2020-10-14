@@ -2,6 +2,11 @@
 
 exports[`components > App renders without crashing 1`] = `
 <DocumentFragment>
+  <header>
+    <h1>
+      Who doesn't love buttons
+    </h1>
+  </header>
   <div
     class="container"
   >
@@ -14,7 +19,7 @@ exports[`components > App renders without crashing 1`] = `
         Counter
       </h2>
       <button
-        class="button"
+        class="button button--large button--primary"
         type="button"
       >
         Increment by one
@@ -35,7 +40,7 @@ exports[`components > App renders without crashing 1`] = `
         Random Number
       </h2>
       <button
-        class="button"
+        class="button button--large button--primary"
         type="button"
       >
         Get random number

@@ -6,6 +6,10 @@ export default {
   title: 'Components/Button',
   component: Button,
   argTypes: {
+    primary: { controls: 'bool' },
+    disabled: { controls: 'bool' },
+    label: { controls: 'text' },
+    size: { controls: { type: 'select', options: ['small', 'medium', 'large'] } },
     backgroundColor: { control: 'color' }
   }
 }
