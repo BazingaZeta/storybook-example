@@ -1,0 +1,47 @@
+.button {
+  background: #2d35a7;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  margin: 0 auto 24px;
+  padding: 12px 24px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.button:disabled {
+  background: lightgray;
+  cursor: not-allowed;
+}
+
+.button:active:not(:disabled) {
+  left: 1px;
+  position: relative;
+  top: 1px;
+}
+
+.button--primary {
+  background-color: #1ea7fd;
+}
+
+.button--secondary {
+  box-shadow: none;
+  color: lightgray;
+}
+
+.button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+.button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+
+.button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}

@@ -38,7 +38,9 @@
     "fix:js": "npx eslint --fix ./src/",
     "lint:js": "npx eslint ./src/",
     "lint:style": "npx stylelint ./src/",
-    "fix:style": "npx stylelint ./src/ --fix"
+    "fix:style": "npx stylelint ./src/ --fix",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -54,5 +56,30 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@storybook/addon-actions": "^6.0.26",
+    "@storybook/addon-essentials": "^6.0.26",
+    "@storybook/addon-links": "^6.0.26",
+    "@storybook/node-logger": "^6.0.26",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/react": "^6.0.26",
+    "babel-loader": "^8.1.0",
+    "react-is": "^16.13.1"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.js"
+    ],
+    "exclude": [
+      "src/stories/*"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "all": true,
+    "cache": true
   }
 }

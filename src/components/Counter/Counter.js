@@ -1,32 +1,25 @@
 import React from 'react'
-import { useCountValue, useActions } from '../../features/counter'
+import PropTypes from 'prop-types'
+
+import Button from 'components/Button/Button'
+
 import classes from './Counter.module.css'
 
-const Counter = () => {
-  /**
-   *  Get count value from Redux store. We defined selector
-   *  (state => state.counter.value) inside counter feature folder,
-   *  to make component global state agnostic
-   */
-  const count = useCountValue()
-
-  /** Create incrementCounter action, using custom hook from feature */
-  const { incrementCounter } = useActions()
-
-  return (
-    <div className={classes.counter}>
-      <h2 className={classes.header}>Sync counter</h2>
-      <button
-        className={classes.button}
-        type="button"
-        onClick={incrementCounter}>
-        Increment by one
-      </button>
-      <div>
-        Total value: <strong>{count}</strong>
-      </div>
+const Counter = ({ onClick, label, header, count }) => (
+  <div className={classes.counter}>
+    <h2 className={classes.header}>{header}</h2>
+    <Button onClick={onClick} primary size="large" label={label} />
+    <div>
+      Total value: <strong>{count}</strong>
     </div>
-  )
+  </div>
+)
+
+Counter.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  label: PropTypes.string.isRequired,
+  header: PropTypes.string.isRequired,
+  count: PropTypes.number.isRequired
 }
 
 export default Counter

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components > Random > Pure renders different store states when isLoading=false && hasError=false && isFulfilled=false 1`] = `
+exports[`components > Random renders different store states when isLoading === false && hasError === false && isFulfilled === false 1`] = `
 <DocumentFragment>
   <div
     class="counter"
@@ -8,22 +8,22 @@ exports[`components > Random > Pure renders different store states when isLoadin
     <h2
       class="header"
     >
-      some header
+      Random Number
     </h2>
     <button
       class="button"
       type="button"
     >
-      some label
+      Get random number
     </button>
     <div>
-      some actionLabel
+      Click the button to get random number
     </div>
   </div>
 </DocumentFragment>
 `;
 
-exports[`components > Random > Pure renders different store states when isLoading=false && hasError=false && isFulfilled=true 1`] = `
+exports[`components > Random renders different store states when isLoading === false && hasError === false && isFulfilled === true 1`] = `
 <DocumentFragment>
   <div
     class="counter"
@@ -31,25 +31,25 @@ exports[`components > Random > Pure renders different store states when isLoadin
     <h2
       class="header"
     >
-      some header
+      Random Number
     </h2>
     <button
       class="button"
       type="button"
     >
-      some label
+      Get random number
     </button>
     <div>
       Number from random.org: 
       <strong>
-        555
+        1
       </strong>
     </div>
   </div>
 </DocumentFragment>
 `;
 
-exports[`components > Random > Pure renders different store states when isLoading=false && hasError=true && isFulfilled=false 1`] = `
+exports[`components > Random renders different store states when isLoading === false && hasError === true && isFulfilled === false 1`] = `
 <DocumentFragment>
   <div
     class="counter"
@@ -57,13 +57,13 @@ exports[`components > Random > Pure renders different store states when isLoadin
     <h2
       class="header"
     >
-      some header
+      Random Number
     </h2>
     <button
       class="button"
       type="button"
     >
-      some label
+      Get random number
     </button>
     <div>
       Ups...
@@ -72,7 +72,7 @@ exports[`components > Random > Pure renders different store states when isLoadin
 </DocumentFragment>
 `;
 
-exports[`components > Random > Pure renders different store states when isLoading=true && hasError=false && isFulfilled=false 1`] = `
+exports[`components > Random renders different store states when isLoading === true && hasError === false && isFulfilled === false 1`] = `
 <DocumentFragment>
   <div
     class="counter"
@@ -80,17 +80,17 @@ exports[`components > Random > Pure renders different store states when isLoadin
     <h2
       class="header"
     >
-      some header
+      Random Number
     </h2>
     <button
       class="button"
       disabled=""
       type="button"
     >
-      some label
+      Get random number
     </button>
     <div>
-      some loadingLabel
+      Getting number
     </div>
   </div>
 </DocumentFragment>

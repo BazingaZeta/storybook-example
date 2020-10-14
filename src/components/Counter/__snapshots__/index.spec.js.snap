@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components > Counter > Counter rendered without crashing 1`] = `
+exports[`components > Counter renders without crashing 1`] = `
 <DocumentFragment>
   <div
     class="counter"
@@ -8,18 +8,18 @@ exports[`components > Counter > Counter rendered without crashing 1`] = `
     <h2
       class="header"
     >
-      some header
+      Counter
     </h2>
     <button
       class="button"
       type="button"
     >
-      plus me up!
+      Increment by one
     </button>
     <div>
       Total value: 
       <strong>
-        3
+        6
       </strong>
     </div>
   </div>

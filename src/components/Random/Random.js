@@ -1,39 +1,57 @@
 import React from 'react'
-import { useActions, useRandomAPI } from '../../features/random'
+import PropTypes from 'prop-types'
+
+import Button from 'components/Button/Button'
+
 import classes from './Random.module.css'
 
-const Random = () => {
-  /**
-   *  Get number, returned  from random.org, and the state of request from Redux store.
-   */
-  const { number, isLoading, hasError, isFulfilled } = useRandomAPI()
-
-  /** Create incrementCounter action, using custom hook from feature */
-  const { getNumber } = useActions()
-
+const Random = ({
+  isLoading,
+  hasError,
+  isFulfilled,
+  number,
+  onClick,
+  header,
+  label,
+  actionLabel,
+  loadingLabel
+}) => {
   /** Define pristine state condition, when user didn't do any actions */
   const isPristine = !isLoading && !hasError && !isFulfilled
 
   return (
     <div className={classes.counter}>
-      <h2 className={classes.header}>Async Random</h2>
-      <button
-        disabled={isLoading}
-        className={classes.button}
-        type="button"
-        onClick={getNumber}>
-        Get random number
-      </button>
-      {isPristine && <div>Click the button to get random number</div>}
-      {isLoading && <div>Getting number</div>}
+      <h2 className={classes.header}>{header}</h2>
+      <Button disabled={isLoading} onClick={onClick} primary size="large" label={label} />
+      {isPristine && <div>{actionLabel}</div>}
+      {isLoading && <div>{loadingLabel}</div>}
       {isFulfilled && (
         <div>
-          Number from random.org: <strong>{number}</strong>
+          Retrieved from random.org: <tt>{number}</tt>
         </div>
       )}
-      {hasError && <div>Ups...</div>}
+      {hasError && <div>Error: Could not retrieve a random number</div>}
     </div>
   )
+}
+
+Random.propTypes = {
+  isLoading: PropTypes.bool,
+  hasError: PropTypes.bool,
+  isFulfilled: PropTypes.bool,
+  number: PropTypes.number,
+  onClick: PropTypes.func.isRequired,
+  header: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  actionLabel: PropTypes.string.isRequired,
+  loadingLabel: PropTypes.string.isRequired
+}
+
+Random.defaultProps = {
+  isLoading: false,
+  hasError: false,
+  isFulfilled: false,
+  number: null
 }
 
 export default Random
