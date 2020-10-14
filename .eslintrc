@@ -68,7 +68,8 @@
     {
       "files": ["**/*.spec.js"],
       "rules": {
-        "react/prop-types": "off"
+        "react/prop-types": "off",
+        "fp/no-mutation": "off"
       }
     },
     {
@@ -76,7 +77,8 @@
       "rules": {
         "react/prop-types": "off",
         "react/no-unescaped-entities": "off",
-        "fp/no-mutation": "off"
+        "fp/no-mutation": "off",
+        "camelcase": "off"
       }
     }
   ]

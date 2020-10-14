@@ -88,9 +88,7 @@ describe('features > counter > useActions', () => {
       })
 
       /** Second dispatched action should have _FULFILLED suffix */
-      expect(store.getActions()[1].type).toEqual(
-        `${GET_RANDOM_NUMBER}_FULFILLED`
-      )
+      expect(store.getActions()[1].type).toEqual(`${GET_RANDOM_NUMBER}_FULFILLED`)
 
       /** Second dispatched action should deliver response from API */
       expect(store.getActions()[1].payload.data).toEqual(response)
@@ -102,9 +100,7 @@ describe('features > counter > useActions', () => {
       async mockResponse => {
         let hasThrown
         const { result } = renderHook(() => useActions(), {
-          wrapper: ({ children }) => (
-            <Provider store={store}>{children}</Provider>
-          )
+          wrapper: ({ children }) => <Provider store={store}>{children}</Provider>
         })
 
         mockResponse()
@@ -120,9 +116,7 @@ describe('features > counter > useActions', () => {
           expect(store.getActions()[0]).toEqual({
             type: `${GET_RANDOM_NUMBER}_PENDING`
           })
-          expect(store.getActions()[1].type).toEqual(
-            `${GET_RANDOM_NUMBER}_REJECTED`
-          )
+          expect(store.getActions()[1].type).toEqual(`${GET_RANDOM_NUMBER}_REJECTED`)
           expect(store.getActions()[1].payload).toBeInstanceOf(Error)
           expect(store.getActions()[1].payload).toMatchSnapshot()
           expect(hasThrown).toBe(true)

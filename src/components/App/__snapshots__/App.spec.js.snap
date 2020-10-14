@@ -11,7 +11,7 @@ exports[`components > App renders without crashing 1`] = `
       <h2
         class="header"
       >
-        Sync counter
+        Counter
       </h2>
       <button
         class="button"
@@ -32,7 +32,7 @@ exports[`components > App renders without crashing 1`] = `
       <h2
         class="header"
       >
-        Async Random
+        Random Number
       </h2>
       <button
         class="button"
