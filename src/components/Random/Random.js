@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Button from 'components/Button/Button'
+import Button from 'components/Button'
 
-import classes from './Random.module.css'
+import { Wrapper, H1 } from '../typography'
 
 const Random = ({
   isLoading,
@@ -20,18 +20,18 @@ const Random = ({
   const isPristine = !isLoading && !hasError && !isFulfilled
 
   return (
-    <div className={classes.counter}>
-      <h2 className={classes.header}>{header}</h2>
+    <Wrapper>
+      <H1>{header}</H1>
       <Button disabled={isLoading} onClick={onClick} primary size="large" label={label} />
       {isPristine && <div>{actionLabel}</div>}
       {isLoading && <div>{loadingLabel}</div>}
       {isFulfilled && (
         <div>
-          Retrieved from random.org: <tt>{number}</tt>
+          Retrieved: <tt>{number}</tt>
         </div>
       )}
       {hasError && <div>Error: Could not retrieve a random number</div>}
-    </div>
+    </Wrapper>
   )
 }
 

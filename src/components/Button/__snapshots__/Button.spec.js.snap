@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > Button renders rendered without crashing 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdnylx hAyApL"
+    disabled=""
+    type="button"
+  >
+    plus me up!
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components > Button renders rendered without crashing 2`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdnylx hAyApL"
+    type="button"
+  >
+    plus me up!
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components > Button renders rendered without crashing 3`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdnylx iVLmaZ"
+    disabled=""
+    type="button"
+  >
+    plus me up!
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components > Button renders rendered without crashing 4`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdnylx iVLmaZ"
+    type="button"
+  >
+    plus me up!
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components > Button renders rendered without crashing 5`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdnylx lolljv"
+    disabled=""
+    type="button"
+  >
+    plus me up!
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components > Button renders rendered without crashing 6`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdnylx lolljv"
+    type="button"
+  >
+    plus me up!
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components > Button renders rendered without crashing 7`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdnylx iwTwVc"
+    disabled=""
+    type="button"
+  >
+    plus me up!
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components > Button renders rendered without crashing 8`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdnylx iwTwVc"
+    type="button"
+  >
+    plus me up!
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components > Button renders rendered without crashing 9`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdnylx fUwXgK"
+    disabled=""
+    type="button"
+  >
+    plus me up!
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components > Button renders rendered without crashing 10`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdnylx fUwXgK"
+    type="button"
+  >
+    plus me up!
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components > Button renders rendered without crashing 11`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdnylx dpAZAU"
+    disabled=""
+    type="button"
+  >
+    plus me up!
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components > Button renders rendered without crashing 12`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdnylx dpAZAU"
+    type="button"
+  >
+    plus me up!
+  </button>
+</DocumentFragment>
+`;

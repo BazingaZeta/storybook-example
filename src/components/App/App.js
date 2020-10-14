@@ -3,17 +3,17 @@ import React from 'react'
 import Counter from '../Counter'
 import Random from '../Random'
 
-import Header from '../Header/Header'
+import Header from '../Header'
 
-import classes from './App.module.css'
+import { Container } from './styles'
 
 const App = () => (
   <>
     <Header title="Let's click some buttons" subtitle="Who doesn't love buttons?" />
-    <div className={classes.container}>
+    <Container>
       <Counter />
       <Random />
-    </div>
+    </Container>
   </>
 )
 

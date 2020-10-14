@@ -1,20 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './button.css'
+import { Button as StyledButton } from './styles'
 
-const Button = ({ disabled, primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'button--primary' : 'button--secondary'
-  return (
-    <button
-      type="button"
-      disabled={disabled}
-      className={['button', `button--${size}`, mode].join(' ')}
-      style={backgroundColor && { backgroundColor }}
-      {...props}>
-      {label}
-    </button>
-  )
-}
+const Button = ({ disabled, primary, backgroundColor, size, label, ...props }) => (
+  <StyledButton
+    type="button"
+    disabled={disabled}
+    primary={primary}
+    size={size}
+    backgroundColor={backgroundColor}
+    {...props}>
+    {label}
+  </StyledButton>
+)
 
 Button.propTypes = {
   disabled: PropTypes.bool,

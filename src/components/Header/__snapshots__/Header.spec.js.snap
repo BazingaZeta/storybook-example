@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > Header renders with subtitle rendered without crashing 1`] = `
+<DocumentFragment>
+  <header
+    class="sc-hKFyIo HAWcw"
+  >
+    <h1
+      class="sc-gtssRu sc-eCApGN llUjUL koJaaW"
+    >
+      some kind of title
+    </h1>
+    <h2
+      class="sc-dlnjPT sc-jSFkmK gOyEAQ inRwcu"
+    >
+      some kind of subtitle
+    </h2>
+  </header>
+</DocumentFragment>
+`;
+
+exports[`components > Header renders without subtitle rendered without crashing 1`] = `
+<DocumentFragment>
+  <header
+    class="sc-hKFyIo HAWcw"
+  >
+    <h1
+      class="sc-gtssRu sc-eCApGN llUjUL koJaaW"
+    >
+      some kind of title
+    </h1>
+  </header>
+</DocumentFragment>
+`;

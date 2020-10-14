@@ -1,0 +1,110 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import { Wrapper, H1, H2 } from 'components/typography'
+
+<Meta title="Typography" />
+
+# Typography
+
+Generic and reusable typography elements.
+
+## Wrapper
+
+The `Wrapper` is a generic container for other elements.
+
+<Canvas>
+  <Story name="Wrapper">
+    <Wrapper>
+      <p>Some arbitrary content</p>
+      <p>goes here</p>
+    </Wrapper>
+  </Story>
+</Canvas>
+
+## Basic Text
+
+Basic (vanilla) styling of text.
+
+### Unformatted text
+
+Such as text within a `div` that's got no other styling associated with it.
+
+<Canvas>
+  <Story name="Plain Text">
+    <div>Some unformatted text</div>
+  </Story>
+</Canvas>
+
+### Paragraphs
+
+Text in a `p` tag
+
+<Canvas>
+  <Story name="p">
+    <p>A paragraph of text.</p>
+  </Story>
+</Canvas>
+
+### Inline teletype formatting
+
+Text in a `tt` tag (used for numbers)
+
+<Canvas>
+  <Story name="tt">
+    <tt>123456</tt>
+  </Story>
+</Canvas>
+
+## Headings
+
+### H1
+
+The `H1` is used for titles and page headings.
+
+<Canvas>
+  <Story name="H1">
+    <H1>Some amazing heading</H1>
+  </Story>
+</Canvas>
+
+### H2
+
+The `H2` is used for subtitles and smaller page headings.
+
+<Canvas>
+  <Story name="H2">
+    <H2>Some amazing subheading</H2>
+  </Story>
+</Canvas>
+
+## Lists
+
+Formatting of ordered and unordered lists.
+
+### Unordered lists
+
+List items `li` in an unordered `ul` tag
+
+<Canvas>
+  <Story name="ul">
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+    </ul>
+  </Story>
+</Canvas>
+
+### Ordered lists
+
+List items `li` in an ordered `ol` tag
+
+<Canvas>
+  <Story name="ol">
+    <ol>
+      <li>One</li>
+      <li>Two</li>
+    </ol>
+  </Story>
+</Canvas>
+
+...etc

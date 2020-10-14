@@ -1,18 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Button from 'components/Button/Button'
+import Button from 'components/Button'
 
-import classes from './Counter.module.css'
+import { Wrapper, H1 } from '../typography'
 
 const Counter = ({ onClick, label, header, count }) => (
-  <div className={classes.counter}>
-    <h2 className={classes.header}>{header}</h2>
+  <Wrapper>
+    <H1>{header}</H1>
     <Button onClick={onClick} primary size="large" label={label} />
     <div>
-      Total value: <strong>{count}</strong>
+      Count: <tt>{count}</tt>
     </div>
-  </div>
+  </Wrapper>
 )
 
 Counter.propTypes = {

@@ -3,24 +3,24 @@
 exports[`components > Counter > Counter rendered without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="counter"
+    class="sc-gtssRu evpqoY"
   >
-    <h2
-      class="header"
+    <h1
+      class="sc-dlnjPT bgFMnT"
     >
       some header
-    </h2>
+    </h1>
     <button
-      class="button"
+      class="sc-bdnylx lolljv"
       type="button"
     >
       plus me up!
     </button>
     <div>
-      Total value: 
-      <strong>
+      Count: 
+      <tt>
         3
-      </strong>
+      </tt>
     </div>
   </div>
 </DocumentFragment>

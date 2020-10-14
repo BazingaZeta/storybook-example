@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './header.module.css'
+import { Wrapper, H1, H2 } from './styles'
 
 const Header = ({ title, subtitle }) => (
-  <header>
-    <h1>{title}</h1>
-    {subtitle && <h2>{subtitle}</h2>}
-  </header>
+  <Wrapper>
+    <H1>{title}</H1>
+    {subtitle && <H2>{subtitle}</H2>}
+  </Wrapper>
 )
 
 Header.propTypes = {
