@@ -61,7 +61,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - [Deployment](https://facebook.github.io/create-react-app/docs/deployment)
 - [`npm build` fails to minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
 ## Contributing
 
 Please see the [contributing notes](CONTRIBUTING.md).
