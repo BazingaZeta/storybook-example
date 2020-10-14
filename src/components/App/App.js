@@ -9,7 +9,7 @@ import classes from './App.module.css'
 
 const App = () => (
   <>
-    <Header title="Who doesn't love buttons" />
+    <Header title="Let's click some buttons" subtitle="Who doesn't love buttons?" />
     <div className={classes.container}>
       <Counter />
       <Random />

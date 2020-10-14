@@ -4,8 +4,11 @@ exports[`components > App renders without crashing 1`] = `
 <DocumentFragment>
   <header>
     <h1>
-      Who doesn't love buttons
+      Let's click some buttons
     </h1>
+    <h2>
+      Who doesn't love buttons?
+    </h2>
   </header>
   <div
     class="container"

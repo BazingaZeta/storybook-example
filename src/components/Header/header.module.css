@@ -1,6 +1,7 @@
 header {
   display: flex;
-  margin: 0 2em;
+  flex-flow: column;
+  margin: auto 2em;
   width: 960px;
 }
 
